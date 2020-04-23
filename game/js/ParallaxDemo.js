@@ -59,7 +59,7 @@ class ParallaxDemo extends GameEngine {
 				this.bg_5.x -= 0.1; this.bg_5.redraw()
 			},25)
 		} else {
-			cancelInterval(this.scrTimeout)
+			clearInterval(this.scrTimeout)
 			this.playing = false
 		}
 	}
