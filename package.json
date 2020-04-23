@@ -1,0 +1,40 @@
+{
+	"name": "tenkai-parallax-demo",
+	"version": "1.0.0",
+	"main": "main.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "node node_modules/istanbul/lib/cli.js cover -x 'spec/**' node_modules/jasmine/bin/jasmine.js"
+	},
+	"author": "Tom Cully",
+	"repository": "git@github.com:tomdionysus/tenkai-parallax-demo.git",
+	"dependencies": {
+		"accept-language-parser": "^1.5.0",
+		"asar": "^3.0.3",
+		"async": "^2.6.3",
+		"body-parser": "^1.19.0",
+		"browserify": "^16.5.1",
+		"busboy": "^0.2.14",
+		"case": "^1.6.3",
+		"compression": "^1.7.4",
+		"cookie": "^0.3.1",
+		"cookie-parser": "^1.4.5",
+		"electron-packager": "^14.2.1",
+		"express": "^4.17.1",
+		"moment": "^2.24.0",
+		"ncp": "^2.0.0",
+		"node-sass": "^4.14.0",
+		"striptags": "^3.1.1",
+		"tenkai": "^0.1.2",
+		"terser": "^4.6.11",
+		"tmp": "0.0.33",
+		"uglify-es": "^3.3.9",
+		"underscore": "^1.10.2",
+		"uuid": "^3.4.0"
+	},
+	"devDependencies": {
+		"electron": "^8.2.3",
+		"eslint": "^5.16.0",
+		"jasmine": "2.8.0"
+	}
+}

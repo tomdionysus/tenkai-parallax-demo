@@ -1,0 +1,20 @@
+{
+  "name": "Niki's Birthday Present",
+  "version": "1.0.0",
+  "description": "A birthday present app based on Suikoden II",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/tomdionysus/nikisbirthday",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "devDependencies": {
+    "electron": "^8.0.3"
+  }
+}
