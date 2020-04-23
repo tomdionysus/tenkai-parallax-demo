@@ -1,4 +1,6 @@
-# tenkai-parallax-demo.git
+# tenkai-parallax-demo
+
+A parallax scrolling demo in [Tenkai](https://github.com/tomdionysus/tenkai).
 
 ## Installation
 
