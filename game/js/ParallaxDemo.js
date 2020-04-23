@@ -40,28 +40,34 @@ class ParallaxDemo extends GameEngine {
 		this.bg_4 = this.addScene('bg_4', new TiledScene({ asset: this.getAsset('layer_4'), x: -512, y: 30, z: 1, tileWidth: 512, tileHeight: 512, layers: { 0: [[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]] }}))
 		this.bg_5 = this.addScene('bg_5', new TiledScene({ asset: this.getAsset('layer_5'), x: -512, y: 0, z: 0, tileWidth: 512, tileHeight: 512, layers: { 0: [[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]] }}))
 
-		// Store the middle of the screen in x
-		this.charStopX = (this.width/2)-24
+		this.play()
 
 		callback()
 	}
 
 	onMouseDown() {
 		if(!this.playing) {
-			this.playing = true
-
-			this.scrTimeout = setInterval(()=>{
-				this.bg_0.x -= 0.4; this.bg_0.redraw()
-				this.bg_1.x -= 0.2; this.bg_1.redraw()
-				this.bg_2.x -= 0.1; this.bg_2.redraw()
-				this.bg_3.x -= 0.0; this.bg_3.redraw()
-				this.bg_4.x += 0.5; this.bg_4.redraw()
-				this.bg_5.x -= 0; this.bg_5.redraw()
-			},25)
+			this.play()
 		} else {
-			clearInterval(this.scrTimeout)
-			this.playing = false
+			this.stop()
 		}
+	}
+
+	play() {
+		this.scrTimeout = setInterval(()=>{
+			this.bg_0.x -= 0.3; this.bg_0.redraw()
+			this.bg_1.x -= 0.2; this.bg_1.redraw()
+			this.bg_2.x -= 0.1; this.bg_2.redraw()
+			this.bg_3.x -= 0.05; this.bg_3.redraw()
+			this.bg_4.x += 0.5; this.bg_4.redraw()
+			this.bg_5.x -= 0; this.bg_5.redraw()
+		},25)
+		this.playing = true
+	}
+
+	stop() {
+		clearInterval(this.scrTimeout)
+		this.playing = false
 	}
 
 	onResize() {
