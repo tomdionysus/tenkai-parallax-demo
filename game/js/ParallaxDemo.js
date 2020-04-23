@@ -51,12 +51,12 @@ class ParallaxDemo extends GameEngine {
 			this.playing = true
 
 			this.scrTimeout = setInterval(()=>{
-				this.bg_0.x -= 0.8; this.bg_0.redraw()
-				this.bg_1.x -= 0.6; this.bg_1.redraw()
-				this.bg_2.x -= 0.4; this.bg_2.redraw()
-				this.bg_3.x -= 0.3; this.bg_3.redraw()
-				this.bg_4.x -= 0.2; this.bg_4.redraw()
-				this.bg_5.x -= 0.1; this.bg_5.redraw()
+				this.bg_0.x -= 0.4; this.bg_0.redraw()
+				this.bg_1.x -= 0.2; this.bg_1.redraw()
+				this.bg_2.x -= 0.1; this.bg_2.redraw()
+				this.bg_3.x -= 0.0; this.bg_3.redraw()
+				this.bg_4.x += 0.5; this.bg_4.redraw()
+				this.bg_5.x -= 0; this.bg_5.redraw()
 			},25)
 		} else {
 			clearInterval(this.scrTimeout)

@@ -14,3 +14,7 @@ npm install
 npm start
 open http://localhost:8080
 ```
+
+## Credits
+
+Parallax image set from [Spiffy UV Parallax Effect With OpenGL](http://oldsite.dartographer.com/spiffy-uv-parallax-effect-with-opengl/).
