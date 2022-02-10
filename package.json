@@ -23,7 +23,7 @@
 		"express": "^4.17.1",
 		"moment": "^2.24.0",
 		"ncp": "^2.0.0",
-		"node-sass": "^4.14.0",
+		"node-sass": "^7.0.0",
 		"striptags": "^3.1.1",
 		"tenkai": "^0.1.2",
 		"terser": "^4.6.11",
