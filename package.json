@@ -26,7 +26,7 @@
 		"node-sass": "^4.14.0",
 		"striptags": "^3.1.1",
 		"tenkai": "^0.1.2",
-		"terser": "^4.6.11",
+		"terser": "^4.8.1",
 		"tmp": "0.0.33",
 		"uglify-es": "^3.3.9",
 		"underscore": "^1.10.2",
