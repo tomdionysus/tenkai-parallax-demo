@@ -20,7 +20,7 @@
 		"cookie": "^0.3.1",
 		"cookie-parser": "^1.4.5",
 		"electron-packager": "^14.2.1",
-		"express": "^4.17.1",
+		"express": "^4.17.3",
 		"moment": "^2.24.0",
 		"ncp": "^2.0.0",
 		"node-sass": "^4.14.0",
